@@ -19,16 +19,20 @@ console.log(`o valor final do produto é R$: ${valor - desconto + imposto}`)
 // Exercício 2: Você comprou um produto por R$ 100,00 e deseja vender com um lucro adicional
 // de R$ 30,00. Calcule o preço de venda do produto.
 // Exemplo de Saída: // “Preço de venda do produto: R$ 130”
-
-
-
+let vproduto = 100;
+let lucro = 30;
+console.log(`o meu lucro será de ${vproduto + lucro} de reais`)
 
 
 // Exercício 3: Você tem um orçamento de R$ 250,00 e deseja verificar se o custo de um
 // produto, após aplicar um desconto de R$ 50,00, está dentro do orçamento. O custo do produto
 // é R$300,00.
 // Exemplo de Saída: “Preço com desconto: R$ 250” e “Está dentro do orçamento? True”
+let orcamento = 250;
+let desc = 50
+let pproduto = 300
 
+console.log(`preco com desconto ${pproduto - desc} de reais e esta dentro do orcamento: ${(pproduto - desc) >= orcamento}`)
 
 
 // Exercício 4: Você tem duas variáveis, uma que representa a quantidade de produtos em um
@@ -37,7 +41,13 @@ console.log(`o valor final do produto é R$: ${valor - desconto + imposto}`)
 // suficiente (igual ou maior que a quantidade mínima necessária) após converter a string para um
 // número. Imprima no console se a quantidade é suficiente ou não.
 // Exemplo de Saída: “A quantidade no estoque é suficiente: true”
+let qtdp = "31";
+let minqtdp = 30;
 
+qtdp = Number(qtdp)
+console.log(typeof(qtdp))
+
+console.log(` quantidade no estoque é suficiente: ${qtdp >= minqtdp}`)
 
 
 // Exercício 5: Você tem três variáveis: uma que representa se um produto está disponível como
